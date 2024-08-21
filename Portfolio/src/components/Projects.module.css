@@ -1,0 +1,57 @@
+.projectscontainer {
+    padding-top: 4vh;
+    height: 96vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    align-self: center;
+}
+
+.p1 {
+    font-weight: 600;
+    color: rgb(101, 101, 101);
+    text-align: center;
+    align-self: center;
+}
+
+.articlecontainer {
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+    /* margin-left: 8rem;
+    margin-right: 8rem; */
+    margin: 2rem;
+}
+
+.subtitle {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .btncolor {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    background: none;
+    border: rgb(0,0,0) 0.1rem solid;
+  }
