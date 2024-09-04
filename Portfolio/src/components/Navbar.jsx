@@ -11,7 +11,7 @@ export const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <nav className={styles.desktopnav}>
-        <div className={styles.logo}>Martin Fuks</div>
+        <a href="#profile"><img className={styles.logo} src="logo.png" alt="logo" /></a>
         <div className={styles.menu}>
           <ul className={styles.menuitems}>
             <li>

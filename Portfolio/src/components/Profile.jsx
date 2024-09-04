@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./Profile.module.css";
 
+
 export const Profile = () => {
   return (
-    <div className={styles.profilesection}>
+    <div id="profile" className={styles.profilesection}>
       <div className={styles.pic}>
         <img src="perfil.png" alt="Martin Fuks profile picture" />
       </div>
@@ -31,8 +32,8 @@ export const Profile = () => {
             alt="My Linkedin"
             className={styles.icon}
             onClick={() =>
-              (location.href =
-                "https://www.linkedin.com/in/martin-fuks-251b91141/")
+              window.open(
+                "https://www.linkedin.com/in/martin-fuks-251b91141/", "_blank")
             }
           />
           <img
@@ -40,8 +41,7 @@ export const Profile = () => {
             alt="My Github"
             className={styles.icon}
             onClick={() =>
-              (location.href =
-                "https://github.com/Frujiloja/")
+              window.open("https://github.com/Frujiloja/", "_blank")
             }
           />
         </div>

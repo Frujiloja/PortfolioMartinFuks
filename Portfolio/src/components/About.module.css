@@ -1,11 +1,11 @@
 .about {
     justify-content: center;
     align-items: center;
-    padding-top: 4vh;
-    height: 96vh;
+    height: 100vh;
     box-sizing: border-box;
     min-height: fit-content;
     position: relative;
+    padding-top: 15vh;
 }
 
 .title {
@@ -19,6 +19,7 @@
     color: rgb(101, 101, 101);
     text-align: center;
     align-self: center;
+
 }
 
 .text {

@@ -1,13 +1,11 @@
 .projectscontainer {
-    padding-top: 4vh;
-    height: 96vh;
+    height: 100vh;
     box-sizing: border-box;
     min-height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20rem;
 }
 
 .title {
@@ -54,4 +52,8 @@
     border-radius: 2rem;
     background: none;
     border: rgb(0,0,0) 0.1rem solid;
+  }
+
+  .projectimage {
+    height: 200px;
   }

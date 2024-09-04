@@ -1,6 +1,16 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Opcional: un pequeño desplazamiento hacia abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Vuelve a su posición original */
+    }
+  }
+
 .profilesection {
-    padding-top: 4vh;
-    height: 96vh;
+    height: 100vh;
     /* margin: 0 10rem; */
     box-sizing: border-box;
     min-height: fit-content;
@@ -9,6 +19,9 @@
     gap: 5rem;
     /* height: 80vh; */
     margin-right: 10rem;
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+    border-bottom: 1px solid rgb(16, 190, 229);
 }
 
 .pic {
@@ -17,30 +30,35 @@
     width: 650px;
     margin: auto 0;
     justify-content: center;
+    animation: fadeIn 1.5s ease-out;
 }
 
 .text {
     align-self: center;
     text-align: center;
+    animation: fadeIn 1.5s ease-out;
 }
 
 .text p {
     font-weight: 600;
-    color: rgb(82, 82, 82);
+    /* color: rgb(82, 82, 82); */
 }
 
 .textp1 {
     text-align: center;
+    color: rgb(182, 182, 182);
 }
 
 .textp2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    color: rgb(16, 190, 229);
 }
 
 .title {
     font-size: 3rem;
     text-align: center;
+    color: rgb(238, 238, 238);
 }
 
 .socials {
@@ -53,6 +71,12 @@
 .icon {
     cursor: pointer;
     height: 2rem;
+    filter: brightness(1); /* Valor normal */
+    transition: filter 0.3s ease;
+}
+
+.icon:hover {
+    filter: brightness(1.5); /* Aumenta el brillo al pasar el cursor */
 }
 
 .btncontainer {
@@ -78,7 +102,8 @@
     width: 8rem;
     border-radius: 2rem;
     background: none;
-    border: rgb(0,0,0) 0.1rem solid;
+    color: white;
+    border: rgb(240, 240, 240) 0.1rem solid;
 }
 
 .btn2:hover {

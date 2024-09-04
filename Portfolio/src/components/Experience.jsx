@@ -134,7 +134,7 @@ export const Experience = () => {
           </div>
         </div>
       </div>
-      <img src="arrow.png" alt="arrow pic" className={styles.iconarrow} onClick={() => document.getElementById('experience').scrollIntoView({ behavior: 'smooth' })} />
+      <img src="arrow.png" alt="arrow pic" className={styles.iconarrow} onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })} />
     </div>
   );
 };
