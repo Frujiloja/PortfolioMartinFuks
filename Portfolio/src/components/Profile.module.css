@@ -22,6 +22,7 @@
     background-color: rgb(39, 39, 39);
     width: 100%;
     border-bottom: 1px solid rgb(16, 190, 229);
+    position: relative;
 }
 
 .pic {
@@ -116,5 +117,13 @@
     background: rgb(53,53,53);
     color: white;
     border: rgb(255,255,255) 0.1rem solid;
+}
+
+.iconarrow {
+    position: absolute;
+    right: 3rem;
+    bottom: 2rem;
+    height: 2rem;
+    cursor: pointer;
 }
 

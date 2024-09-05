@@ -11,9 +11,14 @@ export const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <nav className={styles.desktopnav}>
-        <a href="#profile"><img className={styles.logo} src="logo.png" alt="logo" /></a>
+        <a href="#profile">
+          <img className={styles.logo} src="logo.png" alt="logo" />
+        </a>
         <div className={styles.menu}>
           <ul className={styles.menuitems}>
+            <li>
+              <a href="#profile">Home</a>
+            </li>
             <li>
               <a href="#about">About</a>
             </li>
@@ -30,7 +35,9 @@ export const Navbar = () => {
         </div>
       </nav>
       <nav className={styles.burguernav}>
-        <div className={styles.logo}>Martin Fuks</div>
+        <a href="#profile">
+          <img className={styles.logo} src="logo.png" alt="logo" />
+        </a>
         <div className={styles.burguermenu}>
           <div
             className={`${styles.burguericon} ${menuOpen ? styles.open : ""}`}
@@ -41,6 +48,9 @@ export const Navbar = () => {
             <span></span>
           </div>
           <ul className={`${styles.menulinks} ${menuOpen ? styles.open : ""}`}>
+            <li>
+              <a href="#profile">Home</a>
+            </li>
             <li>
               <a href="#about" onClick={toggleMenu}>
                 About

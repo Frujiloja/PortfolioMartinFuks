@@ -46,6 +46,7 @@ export const Profile = () => {
           />
         </div>
       </div>
+      <img src="arrow c.png" alt="arrow pic" className={styles.iconarrow} onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })} />
     </div>
   );
 };
