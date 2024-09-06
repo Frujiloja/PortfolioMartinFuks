@@ -66,6 +66,7 @@
     max-width: 700px;
     margin-left: 2rem;
     margin-right: 2rem;
+    text-align: center;
 }
 
 .container {
@@ -75,6 +76,7 @@
     justify-content: center;
     align-items: center;
     /* flex-wrap: wrap; */
+    margin-top: 10vh;
 }
 
 .pic {

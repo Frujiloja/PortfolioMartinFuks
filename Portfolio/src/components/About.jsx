@@ -7,13 +7,13 @@ export const About = () => {
       <p className={styles.t1}>Get To Know More</p>
       <h1 className={styles.title}>About Me</h1>
       <div className={styles.container}>
-        <div className={styles.pic}>
+        {/* <div className={styles.pic}>
           <img
             src="perfil.png"
             alt="Profile Picture"
             className={styles.aboutpic}
           />
-        </div>
+        </div> */}
         <div className={styles.detail}>
           <div className={styles.aboutcontainer}>
             <div className={styles.detailcontainer}>
@@ -25,6 +25,7 @@ export const About = () => {
               <h3>Experience</h3>
               <p className={styles.text}>+1 year - Frontend Development</p>
               <p className={styles.text}>+2 years - Designer</p>
+              <p className={styles.text}>+2 years - Freelance</p>
             </div>
             <div className={styles.detailcontainer}>
               <img

@@ -45,7 +45,7 @@ export const Profile = () => {
         </div>
       </div>
       <div className={styles.pic}>
-        <img src="perfil.png" alt="Martin Fuks profile picture" />
+        <img src="pic redonda bw.png" alt="Martin Fuks profile picture" />
       </div>
       <img
         src="arrow c.png"
