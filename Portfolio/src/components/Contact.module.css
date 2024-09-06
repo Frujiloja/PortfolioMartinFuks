@@ -1,9 +1,16 @@
+@media screen and (max-width: 800px) {
+  .contactinfouppercontainer {
+    width: 25rem;
+  }
+}
+
 .contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 80vh;
   padding-top: 15vh;
+  width: 100%;
 }
 
 .contactinfouppercontainer {
@@ -16,6 +23,7 @@
   margin: 2rem auto;
   padding: 0.5rem;
   margin-top: 15vh;
+  /* width: 25rem; */
 }
 
 .contactinfocontainer {

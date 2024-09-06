@@ -108,4 +108,8 @@
   .projectscontainer {
       height: fit-content;
   }
+
+  .iconarrow {
+    display: none;
+}
 }

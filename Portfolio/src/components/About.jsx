@@ -23,14 +23,8 @@ export const About = () => {
                 className={styles.icon}
               />
               <h3>Experience</h3>
-              <p className={styles.text}>
-                +1 year - 
-                Frontend Development
-              </p>
-              <p className={styles.text}>
-                +2 years -
-                Designer
-              </p>
+              <p className={styles.text}>+1 year - Frontend Development</p>
+              <p className={styles.text}>+2 years - Designer</p>
             </div>
             <div className={styles.detailcontainer}>
               <img
@@ -45,10 +39,27 @@ export const About = () => {
               </p>
             </div>
           </div>
-          <div className={styles.text}><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo deserunt perferendis, quaerat deleniti reiciendis quasi asperiores maiores qui. Fuga iure, numquam tempora perferendis exercitationem magni! Error, nulla qui. Libero omnis assumenda dolore ab aspernatur? Dolore, nemo adipisci architecto ipsum sequi assumenda illum maxime aperiam veniam ipsa odio odit iusto a?</p></div>
+          <div className={styles.text}>
+            <p>
+              I combine my passion for design with my experience as a full-stack
+              programmer. My solid background in design uniquely melds with my
+              ability to code innovative and effective solutions. From an early
+              age, I've been captivated by technology and coding, fostering a
+              deep and enduring interest in the field.
+            </p>
+          </div>
         </div>
       </div>
-      <img src="arrow.png" alt="arrow pic" className={styles.iconarrow} onClick={() => document.getElementById('experience').scrollIntoView({ behavior: 'smooth' })} />
+      <img
+        src="arrow.png"
+        alt="arrow pic"
+        className={styles.iconarrow}
+        onClick={() =>
+          document
+            .getElementById("experience")
+            .scrollIntoView({ behavior: "smooth" })
+        }
+      />
     </div>
   );
 };

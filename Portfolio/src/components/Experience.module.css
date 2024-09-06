@@ -107,4 +107,8 @@ article {
     article {
         width: 100%; /* Ajusta el ancho de los artículos para que ocupen todo el ancho de las tarjetas */
     }
+
+    .iconarrow {
+        display: none;
+    }
 }
