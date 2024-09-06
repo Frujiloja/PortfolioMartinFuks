@@ -9,6 +9,8 @@
     }
   }
 
+
+
 .profilesection {
     height: 100vh;
     /* margin: 0 10rem; */
@@ -18,17 +20,18 @@
     justify-content: center;
     gap: 5rem;
     /* height: 80vh; */
-    margin-right: 10rem;
+    /* margin-right: 10rem; */
     background-color: rgb(39, 39, 39);
     width: 100%;
     border-bottom: 1px solid rgb(16, 190, 229);
     position: relative;
+    flex-wrap: wrap;
 }
 
 .pic {
     display: flex;
-    height: 650px;
-    width: 650px;
+    height: 450px;
+    width: 500px;
     margin: auto 0;
     justify-content: center;
     animation: fadeIn 1.5s ease-out;
@@ -48,16 +51,17 @@
 .textp1 {
     text-align: center;
     color: rgb(182, 182, 182);
+    font-size: 1.75rem;
 }
 
 .textp2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: rgb(16, 190, 229);
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     color: rgb(238, 238, 238);
 }
@@ -94,6 +98,7 @@
     border-radius: 2rem;
     background: rgb(53,53,53);
     color: white;
+    z-index: 1;
 }
 
 .btn {
@@ -105,6 +110,7 @@
     background: none;
     color: white;
     border: rgb(240, 240, 240) 0.1rem solid;
+    z-index: 1;
 }
 
 .btn2:hover {
@@ -127,3 +133,13 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 1200px) {
+    .pic {
+        height: 300px;
+        margin-bottom: 8rem;
+    }
+
+    .text {
+        margin-top: 10rem;
+    }
+}

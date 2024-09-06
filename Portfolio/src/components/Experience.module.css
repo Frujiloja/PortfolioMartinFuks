@@ -89,3 +89,22 @@ article {
     gap: 0.5rem;
 }
 
+
+@media screen and (max-width: 800px) {
+    .experiencecontainer {
+        height: fit-content;
+    }
+
+    .aboutcontainer {
+        flex-direction: column;
+        margin: 0 2rem; /* Ajusta el margen para que se vea bien en pantallas pequeñas */
+    }
+
+    .detailcontainer {
+        margin: 1rem 0; /* Reduce el margen vertical entre las tarjetas */
+    }
+
+    article {
+        width: 100%; /* Ajusta el ancho de los artículos para que ocupen todo el ancho de las tarjetas */
+    }
+}
