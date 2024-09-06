@@ -181,7 +181,7 @@ export const Projects = () => {
               <button
                 className={styles.btncolor}
                 onClick={() =>
-                  window.open("https://example.com/project3", "_blank")
+                  window.open("https://github.com/Frujiloja/Sneakers-Company", "_blank")
                 }
               >
                 Github
@@ -211,7 +211,7 @@ export const Projects = () => {
               <button
                 className={styles.btncolor}
                 onClick={() =>
-                  window.open("https://example.com/project3", "_blank")
+                  window.open("https://github.com/Frujiloja/Perfil-De-Usuario", "_blank")
                 }
               >
                 Github
