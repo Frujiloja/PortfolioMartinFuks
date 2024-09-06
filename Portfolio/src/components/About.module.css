@@ -2,6 +2,7 @@
     .container {
         flex-direction: column; /* Las columnas se apilan una debajo de la otra */
         margin-right: 0; /* Elimina el margen derecho */
+        margin-top: 0 !important;
     }
 
     .pic {
