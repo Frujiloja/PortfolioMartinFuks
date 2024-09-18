@@ -11,7 +11,7 @@ export const Profile = () => {
         <div className={styles.btncontainer}>
           <button
             className={styles.btn}
-            onClick={() => window.open("./Martin Fuks CV English.pdf")}
+            onClick={() => window.open("./MartinFuks CV.pdf")}
           >
             Download CV
           </button>
