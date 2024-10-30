@@ -7,12 +7,14 @@ export const Projects = () => {
   const [currentImage3, setCurrentImage3] = useState(0);
   const [currentImage4, setCurrentImage4] = useState(0);
   const [currentImage5, setCurrentImage5] = useState(0);
+  const [currentImage6, setCurrentImage6] = useState(0);
 
   const images1 = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
   const images2 = ["5.jpg", "6.jpg", "7.jpg"];
   const images3 = ["8.jpg", "9.jpg", "10.jpg"];
   const images4 = ["11.jpg", "12.jpg", "13.jpg"];
-  const images5 = ["14.jpg", "15.jpg"];
+  const images5 = ["16.jpg", "17.jpg", "18.jpg"];
+  const images6 = ["19.jpg", "20.jpg", "21.jpg"];
 
   const nextImage1 = () => {
     setCurrentImage1((prevIndex) => (prevIndex + 1) % images1.length);
@@ -64,6 +66,16 @@ export const Projects = () => {
     );
   };
 
+  const nextImage6 = () => {
+    setCurrentImage6((prevIndex) => (prevIndex + 1) % images6.length);
+  };
+
+  const prevImage6 = () => {
+    setCurrentImage6((prevIndex) =>
+      prevIndex === 0 ? images6.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
     <div id="projects" className={styles.projectscontainer}>
       <p className={styles.p1}>Browse My Recent</p>
@@ -100,6 +112,71 @@ export const Projects = () => {
             </div>
           </div>
         </div>
+                {/* Card 5 */}
+                <div className={styles.projectcolor}>
+          <div className={styles.articlecontainer}>
+            <img
+              src={images5[currentImage5]}
+              alt={`project 5`}
+              className={styles.projectimage}
+            />
+            {/* <h2 className={styles.subtitle}>Wonder Toys</h2> */}
+            <p className={styles.p}>
+            Web Design, Layout, and Development for a Real Estate Company.</p>
+            <div className={styles.btncontainer}>
+              <button className={styles.prevBtn} onClick={prevImage5}>
+                {"<"}
+              </button>
+              <button
+                className={styles.btncolor}
+                onClick={() =>
+                  window.open(
+                    "https://propiedadespelach.com.ar/",
+                    "_blank"
+                  )
+                }
+              >
+                Visit Website
+              </button>
+              <button className={styles.nextBtn} onClick={nextImage5}>
+                {">"}
+              </button>
+            </div>
+          </div>
+        </div>
+        {/* Card 6 */}
+        <div className={styles.projectcolor}>
+          <div className={styles.articlecontainer}>
+            <img
+              src={images6[currentImage6]}
+              alt={`project 6`}
+              className={styles.projectimage}
+            />
+            {/* <h2 className={styles.subtitle}>Wonder Toys</h2> */}
+            <p className={styles.p}>
+            Web Design, Layout, and Development for a finance teacher.
+            </p>
+            <div className={styles.btncontainer}>
+              <button className={styles.prevBtn} onClick={prevImage6}>
+                {"<"}
+              </button>
+              <button
+                className={styles.btncolor}
+                onClick={() =>
+                  window.open(
+                    "https://clasesdefinanzas.com.ar/",
+                    "_blank"
+                  )
+                }
+              >
+                Visit Website
+              </button>
+              <button className={styles.nextBtn} onClick={nextImage6}>
+                {">"}
+              </button>
+            </div>
+          </div>
+        </div>
         {/* Card 2 */}
         <div className={styles.projectcolor}>
           <div className={styles.articlecontainer}>
@@ -120,7 +197,10 @@ export const Projects = () => {
               <button
                 className={styles.btncolor}
                 onClick={() =>
-                  window.open("https://github.com/Frujiloja/STRINGSANDKEYSFRONT", "_blank")
+                  window.open(
+                    "https://github.com/Frujiloja/STRINGSANDKEYSFRONT",
+                    "_blank"
+                  )
                 }
               >
                 Github
@@ -151,7 +231,10 @@ export const Projects = () => {
               <button
                 className={styles.btncolor}
                 onClick={() =>
-                  window.open("https://github.com/Frujiloja/juguetesfront", "_blank")
+                  window.open(
+                    "https://github.com/Frujiloja/juguetesfront",
+                    "_blank"
+                  )
                 }
               >
                 Github
@@ -172,7 +255,7 @@ export const Projects = () => {
             />
             {/* <h2 className={styles.subtitle}>Wonder Toys</h2> */}
             <p className={styles.p}>
-            Simple Website Design and Development for a Sneakers Company.
+              Simple Website Design and Development for a Sneakers Company.
             </p>
             <div className={styles.btncontainer}>
               <button className={styles.prevBtn} onClick={prevImage4}>
@@ -181,42 +264,15 @@ export const Projects = () => {
               <button
                 className={styles.btncolor}
                 onClick={() =>
-                  window.open("https://github.com/Frujiloja/Sneakers-Company", "_blank")
+                  window.open(
+                    "https://github.com/Frujiloja/Sneakers-Company",
+                    "_blank"
+                  )
                 }
               >
                 Github
               </button>
               <button className={styles.nextBtn} onClick={nextImage4}>
-                {">"}
-              </button>
-            </div>
-          </div>
-        </div>
-        {/* Card 5 */}
-        <div className={styles.projectcolor}>
-          <div className={styles.articlecontainer}>
-            <img
-              src={images5[currentImage5]}
-              alt={`project 5`}
-              className={styles.projectimage}
-            />
-            {/* <h2 className={styles.subtitle}>Wonder Toys</h2> */}
-            <p className={styles.p}>
-            Simple Website Design and Development for a Bio Page.
-            </p>
-            <div className={styles.btncontainer}>
-              <button className={styles.prevBtn} onClick={prevImage5}>
-                {"<"}
-              </button>
-              <button
-                className={styles.btncolor}
-                onClick={() =>
-                  window.open("https://github.com/Frujiloja/Perfil-De-Usuario", "_blank")
-                }
-              >
-                Github
-              </button>
-              <button className={styles.nextBtn} onClick={nextImage5}>
                 {">"}
               </button>
             </div>
